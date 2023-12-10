@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/trk7wjn.css">
+    </head>
+    <body>
+        <div id="input-side">
+            <p style="border: none; font-size: 30px; filter: none; margin-top: -50px; margin-left: -17px; margin-bottom: 50px;" > Fill with relevant information about the medicine.</p>
+            <input type="text" placeholder="Patient Name" id="patient-name-input">
+            <input type="text" placeholder="Medicaton Name" id="medication-name-input">
+            <div id="dosage-input-box">
+            <input type="text" placeholder="Dosage" id="dosage-input">
+            <input type="text" placeholder="Unit" id="dosage-unit-input">
+             </div>
+            <input type="text" placeholder="Instructions" id="instructions-data">
+            <input type="text" placeholder="Cautions" id="cautions-data">
+            <input type="text" placeholder="Total Number of Pills" id="pills-input">
+            <div id="refills-input-box">
+            <input type="text" placeholder="Number of Refills" id="refills-input">
+            <p style="border: none;"> / </p>
+            <input type="text" placeholder="Total Number of Refills" id="refills-input-total">
+            </div>
+        </div>
+
+
+
+    <div id="box-side">
+        <select id="dropdown-iterations" style="margin-top: -30px;">
+            <option value="layout-1">Layout 1</option>
+            <option value="layout-2">Layout 2</option>
+        </select>
+        <!-- <input type="color" id="color-input" placeholder="color" style="margin-bottom: 30px;">  -->
+        <select id="color-input" >
+            <option value="#9d3cff">Purple</option>
+            <option value="#0f51ff">Blue</option>
+            <option value="#6ce70d">Green</option>
+            <option value='#ff4576'>Pink</option>
+            <option value='#f9ff00'>Yellow</option>
+        </select>
+        <div id="box">
+            <div id="patient-name">Patient Name</div>
+            <div id="middle-label">
+            <div id="medication-name">Medication Name</div>
+            <div id="dose-box"><div id="dosage">dosage  </div><span id='unit-dosage'>  & unit</span></div>
+            <div id="instructions">Instructions:<br><span id="instructions-input"></span></div>
+            <div id="refills"><span id="number-of-refills">X</span>/<span id='total-num-refills'>X </span> refills</div>
+            <div id="pills"><span id="number-of-pills">X </span> x pills</div>
+        </div>
+            <div id="cautions">Cautions:<br> <span id="caution-input"></span> </div>
+        </div>
+
+    </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
